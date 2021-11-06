@@ -1,0 +1,88 @@
+<!DOCTYPE html> <div class="contenedor">
+            
+           
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="https://www.thymeleaf.org" lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+      
+    </head>
+    <body bgColor="brown">
+        
+         <div align="center">
+             <!--declaramos la propiedad css width que es el ancho del contenido-->
+<table width="700" border="0" cellpadding="5" cellspacing="0">  <!--tabla para diseño de encabezado-->
+  <!--DWLayoutTable-->
+  <tr>
+       <!--declaramos una celda para la tabla-->
+    <td height="27" colspan="4" valign="top" bgcolor="#D6234A"><div align='center' class='style1'>Facultad De Ingenieria en Sistemas</div></td>
+  </tr>
+  <tr>
+        <!--declaramos una segunda celda-->
+    <td height="0" colspan="4" valign="top" bgcolor="#2D7AC0"><div align='center' class='style2'>
+        <p class='style4'>BIENVENIDO A NUESTRO</p>
+    </div>      <p align='center' class='style3'>REGISTRO DE USUARIOS</p></td>
+    <td width="0">&nbsp;</td>   <!--el &nbsp se utiliza cuando no desea un salto de línea automático en esa posición.-->
+    <td width="0">&nbsp;</td>
+  </tr>
+  <tr>
+    
+      <!--declaramos una celda en la cual va a llevar dos botones-->
+    <td colspan="4" rowspan="3" valign="top" bgcolor="#58C3BB"><div align="center">
+      <p class="style10">Administrador </p>
+     
+          <h1>Menú Principal</h1>
+            <div class="botones">
+                  <!--con la etiqueta href indicamos la direccion de enlace de los botones-->
+           <a th:href="@{/agregarUsuario}"><input type="button" value="agregar usuario"></a>
+             <a th:href="@{/listar}"><input type="button" value="mostrar usuarios registrados"></a>
+          
+          
+        </div>
+            </div>
+</tr>
+     <tr>
+ <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="0">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="19" colspan="4" valign="top" bgcolor="#2D7AC0"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="0"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="0"></td>
+    <td></td>
+    
+    <td  colspan="2" valign="top"><div align='center'><span class='style9'>Derechos reservado por Ingeniería en sistemas Universidad Mariano Gálvez XD</span></div></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="0"></td>
+    <td></td>
+    <td>&nbsp;</td>
+    <td></td>
+    <td></td>
+  </tr>
+        </form>
+        
+    </body>
+</html>
